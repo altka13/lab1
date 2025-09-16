@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { blogs } from "@/app/data/blogs";
 
 export default function BlogDetail({ params }: { params: { id: string } }) {
@@ -16,6 +17,7 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
       <p className="mt-4 text-sm text-gray-500">
         Blog ID: {blog.id} - dynamically routed page
       </p>
+      <Link href={`/blog/${blog.id}/comments` } className="text-1xl font-bold mb-2 text-pink-700">comment харах</Link>
     </div>
   );
 }
