@@ -9,12 +9,19 @@ export default function BlogPage() {
         {blogs.map((blog) => (
           <li key={blog.id} className="border p-4 rounded-lg shadow">
             <h2 className="text-xl font-semibold">{blog.blogname}</h2>
-            <p className="text-gray-600">{blog.description}</p>
+            <p className="text-pink-600">{blog.description}</p>
             <Link
               href={`/blog/${blog.id}`}
-              className="text-blue-500 hover:underline"
+              className="text-pink-500 hover:underline"
             >
               Read more
+            </Link>
+            <hr />
+            <Link
+              href={`/`}
+              className="text-pink-500 hover:underline"
+            >
+              back
             </Link>
           </li>
         ))}

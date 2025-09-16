@@ -18,6 +18,13 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
         Blog ID: {blog.id} - dynamically routed page
       </p>
       <Link href={`/blog/${blog.id}/comments` } className="text-1xl font-bold mb-2 text-pink-700">comment харах</Link>
+      <hr />
+      <Link
+              href={`/blog`}
+              className="text-pink-500 hover:underline"
+            >
+              back
+            </Link>
     </div>
   );
 }
