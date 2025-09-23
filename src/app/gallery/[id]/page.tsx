@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { photos } from "@/app/data/photos";
 
 export default function PhotoDetail({ params }: { params: { id: string } }) {
@@ -11,6 +12,12 @@ export default function PhotoDetail({ params }: { params: { id: string } }) {
       <h1>{photo.id}</h1>
       <Image src={photo.src} alt={photo.desc} width={600} height={400} />
       <p>{photo.desc}</p>
+         <Link
+              href={`/gallery`}
+              className="text-pink-500 hover:underline"
+            >
+              back
+            </Link>
     </div>
   );
 }

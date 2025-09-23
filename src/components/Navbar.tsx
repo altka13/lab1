@@ -19,7 +19,10 @@ export default function Navbar(){
           <Link href="/contact" className="block py-2 px-3 text-pink-900 rounded-sm hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent">холбоо барих</Link>
         </li>
         <li>
-          <Link href="/blog" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">blog</Link>
+          <Link href="/blog" className="block py-2 px-3 text-pink-900 rounded-sm hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent">blog</Link>
+        </li>
+        <li>
+          <Link href="/gallery" className="block py-2 px-3 text-pink-900 rounded-sm hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent">images</Link>
         </li>
       </ul>
     </div>
