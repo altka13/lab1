@@ -1,14 +1,16 @@
 import Image from "next/image";
+import { photos } from "@/app/data/photos";
 
-export default function GalleryPage() {
+export default function PhotoDetail({ params }: { params: { id: string } }) {
+  const photo = photos.find((p) => p.id === params.id);
+
+  if (!photo) return <h1>Photo not found</h1>;
+
   return (
     <div style={{ padding: "20px" }}>
-      <h1>My Gallery</h1>
-      <div style={{ display: "flex", gap: "20px" }}>
-        <Image src="/images/drac.jfif" alt="drac" width={300} height={200}/>
-        <Image src="/images/pinkie.jfif" alt="pinkie" width={300} height={200} />
-        <Image src="/images/pinkk.jpg" alt="pink" width={300} height={200} />
-      </div>
+      <h1>{photo.id}</h1>
+      <Image src={photo.src} alt={photo.desc} width={600} height={400} />
+      <p>{photo.desc}</p>
     </div>
   );
 }
