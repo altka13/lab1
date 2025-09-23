@@ -13,6 +13,12 @@ export default function GalleryPage() {
           </Link>
         ))}
       </div>
+      <Link
+              href={`/`}
+              className="text-pink-500 hover:underline"
+            >
+              back
+            </Link>
     </div>
   );
 }
