@@ -24,6 +24,12 @@ export default function Navbar(){
         <li>
           <Link href="/gallery" className="block py-2 px-3 text-pink-900 rounded-sm hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent">images</Link>
         </li>
+        <li>
+          <Link href="/todo" className="block py-2 px-3 text-pink-900 rounded-sm hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent">todo</Link>
+        </li>
+        <li>
+          <Link href="/counter" className="block py-2 px-3 text-pink-900 rounded-sm hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent">counter</Link>
+        </li>
       </ul>
     </div>
 </nav>

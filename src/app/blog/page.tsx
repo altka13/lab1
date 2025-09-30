@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { blogs } from "@/app/data/blogs";
-
+import Layout from "@/components/Layout"
 export default function BlogPage() {
   return (
+    <Layout>
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Blog List</h1>
       <ul className="space-y-3">
@@ -27,5 +28,5 @@ export default function BlogPage() {
         ))}
       </ul>
     </div>
-  );
+  </Layout>);
 }

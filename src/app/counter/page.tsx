@@ -1,15 +1,28 @@
 "use client";
 import { useState } from "react";
-
+import Layout from "@/components/Layout"
 export default function Counter() {
-  const [count, setCount] = useState(0); // анхны утга нь 0
+  const [count, setCount] = useState(0); 
 
-  return (
+  const increment = () => setCount(count + 1);
+  const decrement = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+  const multiply = () => setCount(count * 2);
+  const divide = () => setCount(Math.floor(count / 2)); 
+  const reset = () =>setCount(0)
+  return (<Layout>
     <div>
       <h1>Count: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>+ Нэмэх</button>
-      <button onClick={() => setCount(count - 1)}>- Хасах</button>
-       <button onClick={() => setCount(0)}>- reset</button>
+      <div  style={{  display: 'flex', textAlign: 'center', gap: '20px', marginTop:"20px" }}>
+      <button onClick={increment}>nemeh</button>
+      <button onClick={decrement}> hasah</button>
+      <button onClick={multiply}>urjih</button>
+      <button onClick={divide}>huwaah</button>
+      <button onClick={reset}>reset</button>
+      </div>
     </div>
-  );
+  </Layout>);
 }

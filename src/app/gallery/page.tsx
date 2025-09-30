@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { photos } from "@/app/data/photos";
-
+import Layout from "@/components/Layout"
 export default function GalleryPage() {
   return (
+    <Layout>
     <div style={{ padding: "20px" }}>
       <h1>Gallery</h1>
       <div style={{ display: "flex", gap: "20px" }}>
@@ -20,5 +21,5 @@ export default function GalleryPage() {
               back
             </Link>
     </div>
-  );
+  </Layout>);
 }
