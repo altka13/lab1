@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Layout from "@/components/Layout"
 
 export default function FullForm() {
   const [data, setData] = useState({
@@ -16,7 +17,7 @@ export default function FullForm() {
     console.log("Form submitted:", data);
   };
 
-  return (
+  return (<Layout>
     <form
       onSubmit={handleSubmit}
       className="flex flex-col gap-2 w-80 border p-4 rounded"
@@ -71,9 +72,10 @@ export default function FullForm() {
         I agree with terms
       </label>
 
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+      <button type="submit" className="bg-pink-500 text-white p-2 rounded">
         Submit
       </button>
     </form>
+    </Layout>
   );
 }
