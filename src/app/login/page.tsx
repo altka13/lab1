@@ -27,7 +27,7 @@ export default function LoginPage() {
   return (<Layout>
   <div className={styles.devv}>
     <div className="flex flex-col items-center mt-10">
-      <h1 className={styles.title}>Login</h1>
+      <h1 className="bg-pink-400 text-white p-2 rounded text-2xl font-bold mb-4">Login</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-72">
         <input
           type="email"
