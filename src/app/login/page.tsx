@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./login.module.css"
+import Layout from "@/components/Layout"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -20,10 +21,11 @@ export default function LoginPage() {
     }
 
     setError("");
-    alert(`Нэвтэрлээ: ${email}`);
+    alert(`Амжилттай нэвтэрлээ: ${email}`);
   };
 
-  return (<div className={styles.devv}>
+  return (<Layout>
+  <div className={styles.devv}>
     <div className="flex flex-col items-center mt-10">
       <h1 className={styles.title}>Login</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-72">
@@ -48,5 +50,6 @@ export default function LoginPage() {
       </form>
     </div>
     </div>
+    </Layout>
   );
 }
