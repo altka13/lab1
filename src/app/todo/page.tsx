@@ -85,7 +85,7 @@ export default function TodoPage() {
             padding: 10,
             border: '1px solid #ccc',
             borderRadius: 4,
-            background: todo.done ? '#e0ffe0' : '#fff'
+            background: todo.done ? '#ffe0faff' : '#fff'
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div>
